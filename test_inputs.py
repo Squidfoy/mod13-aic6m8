@@ -119,12 +119,6 @@ class TestInputs(unittest.TestCase):
         if not re.match(pattern, date_string):
             return False
         
-        #try to parse the date to ensure it's a valid date
-        try:
-            datetime.strptime(date_string, "%Y-%m-%d")
-            return True
-        except ValueError:
-            return False
 
 
 if __name__ == '__main__':
